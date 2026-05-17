@@ -1,0 +1,47 @@
+/* ===== قسم التاريخ - إظهار وإخفاء المعلومات ===== */
+
+.info-box{
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(0,0,0,0.35);
+    color: #fff;
+    border-radius: 12px;
+    line-height: 1.8;
+    transition: all 0.4s ease;
+    border-right: 4px solid gold;
+}
+
+.info-box.active{
+    display: block;
+    animation: fadeInBox 0.4s ease;
+}
+
+/* حركة جميلة عند الظهور */
+@keyframes fadeInBox{
+    from{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* زر اقرأ المزيد */
+.info-btn{
+    padding: 10px 25px;
+    border: none;
+    background: gold;
+    color: black;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.info-btn:hover{
+    background: white;
+    transform: scale(1.05);
+}
