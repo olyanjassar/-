@@ -63,7 +63,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     </section>
 
 
-<!-- قسم التاريخ الإسلامي --><!-- قسم التاريخ الإسلامي -->
+<!-- قسم التاريخ الإسلامي -->
 
 <section class="history-section" id="history">
 
@@ -184,7 +184,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 
 
 <!-- قسم العلماء المسلمين -->
-
 <section class="scientists-section" id="scientists">
 
     <h2 class="scientists-title">
@@ -199,35 +198,101 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 
         <!-- ابن سينا -->
         <div class="scientist-card">
+
             <img src="ibn-sina.jpg" alt="ابن سينا">
+
             <h3>ابن سينا</h3>
-            <button onclick="showScientist('ibnSina')">تفاصيل</button>
+
+            <button onclick="toggleDetails('details1')">
+                تفاصيل
+            </button>
+
+            <p class="scientist-details" id="details1">
+                ابن سينا عالم وطبيب وفيلسوف مسلم، اشتهر بكتاب
+                "القانون في الطب" الذي ظل مرجعًا طبيًا لعدة قرون.
+            </p>
+
         </div>
 
         <!-- الخوارزمي -->
         <div class="scientist-card">
+
             <img src="khwarizmi.jpg" alt="الخوارزمي">
+
             <h3>الخوارزمي</h3>
-            <button onclick="showScientist('khwarizmi')">تفاصيل</button>
+
+            <button onclick="toggleDetails('details2')">
+                تفاصيل
+            </button>
+
+            <p class="scientist-details" id="details2">
+                الخوارزمي عالم رياضيات وفلك مسلم، يُعرف بأنه
+                مؤسس علم الجبر وساهم في تطوير النظام العشري.
+            </p>
+
         </div>
 
         <!-- ابن الهيثم -->
         <div class="scientist-card">
+
             <img src="ibn-haytham.jpg" alt="ابن الهيثم">
+
             <h3>ابن الهيثم</h3>
-            <button onclick="showScientist('ibnHaytham')">تفاصيل</button>
+
+            <button onclick="toggleDetails('details3')">
+                تفاصيل
+            </button>
+
+            <p class="scientist-details" id="details3">
+                ابن الهيثم عالم مسلم برع في علم البصريات،
+                ويعد من أوائل العلماء الذين استخدموا المنهج العلمي.
+            </p>
+
         </div>
 
         <!-- الرازي -->
         <div class="scientist-card">
+
             <img src="al-razi.jpg" alt="الرازي">
+
             <h3>الرازي</h3>
-            <button onclick="showScientist('razi')">تفاصيل</button>
+
+            <button onclick="toggleDetails('details4')">
+                تفاصيل
+            </button>
+
+            <p class="scientist-details" id="details4">
+                الرازي طبيب وكيميائي وفيلسوف مسلم،
+                من أعظم أطباء الحضارة الإسلامية وله مؤلفات مهمة في الطب.
+            </p>
+
         </div>
 
     </div>
 
 </section>
+
+
+
+<!-- نافذة التفاصيل -->
+<div id="scientistModal" class="modal">
+    <div class="modal-content">
+
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+
+        <h2 id="scientistName"></h2>
+        <p id="scientistDetails"></p>
+
+    </div>
+</div>
+
+<!-- ربط الملفات -->
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+
+
+
 
 <!-- نافذة المعلومات -->
 <div id="scientistModal" class="modal">
@@ -527,7 +592,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 
                     <video controls poster="haram-mosque.jpg">
 
-                        <source src="history.mp4"
+                        <source src="slamic-history.mp4"
                         type="video/mp4">
 
                     </video>
@@ -900,6 +965,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 
                 <span>
                     مطور الواجهة وتحسين تجربة الموقع
+                </span>
+
+            </div>
+             <div class="team-card">
+
+                <div class="circle">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+
+                <h3>
+                   عبدالعزيز صالح الصاعدي
+                </h3>
+
+                <span>
+                    باحث ومصمم المحتوى الإبداعي
                 </span>
 
             </div>
