@@ -1282,6 +1282,7 @@ audio{
         font-size: 28px;
     }
 
+
     .audio-card{
         grid-template-columns: 1fr;
     }
@@ -1292,3 +1293,22 @@ audio{
 
 }
 
+
+
+
+
+.info-box{
+    display: block;
+    margin-top: 12px;
+    background: linear-gradient(135deg, #f8f5ef, #ffffff);
+    padding: 16px 18px;
+    border-radius: 14px;
+    line-height: 2;
+    color: #1f2d3d;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Cairo", "Tajawal", Arial, sans-serif;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border-right: 5px solid #c9a227;
+    letter-spacing: 0.2px;
+}
